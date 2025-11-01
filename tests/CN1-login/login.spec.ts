@@ -9,7 +9,6 @@ test('Login com dados incorretos ', async ({ page }) => {
   await page.locator('[data-test="password"]').fill('invalidpassword');
   await page.locator('[data-test="login-button"]').click();
   await expect(page.locator('[data-test="error"]')).toContainText('Epic sadface: Username and password do not match any user in this service');
-
 });
 test('Login com sucesso', async ({ page }) => {
 

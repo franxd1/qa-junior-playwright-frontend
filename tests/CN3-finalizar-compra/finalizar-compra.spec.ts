@@ -57,7 +57,6 @@ test('Finalizar uma compra', async ({ page }) => {
 });
 
 
-
 function CalcularTaxa(precoProduto: number) {
     const tax = 0.08 * precoProduto
     return precoProduto + tax

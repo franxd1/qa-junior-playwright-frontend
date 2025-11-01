@@ -34,6 +34,5 @@ test('Remover produtos de dentro do carrinho', async ({ page }) => {
 
     await expect(page.locator('[data-test="inventory-item"]').nth(0)).toBeVisible();
     await page.locator('[data-test="remove-sauce-labs-bolt-t-shirt"]').click();
-
     await expect(page.locator('[data-test="shopping-cart-badge"]')).toHaveCount(0);
 });
